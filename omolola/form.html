@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>form</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .container .right {
+            width: 50%;
+        }
+
+        .container .right img {
+            width: 100%;
+        }
+
+        .container .left {
+            width: 50%;
+            padding-right: 50px;
+        }
+
+        .container .left .inner {
+            padding: 20px;
+            margin: 0 auto;
+
+        }
+
+        .container .left .inner h2 {
+            margin-bottom: 5px;
+        }
+
+        .container .left .inner p {
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .container .left .inner .formgroup {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container .left .inner .formgroup p {
+            color: black;
+            font-weight: bold;
+        }
+
+        .container .left .inner .formgroup input {
+            width: 100%;
+            padding: 7px;
+            font-size: 14px;
+        }
+
+        .container .left .inner .check {
+            margin-bottom: 20px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container .left .inner .check p {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        .container .left .inner button {
+            width: 100%;
+            color: white;
+            background-color: purple;
+            padding: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container .left .inner .btn {
+            color: black;
+            width: 100%;
+            background-color: rgb(250, 241, 241);
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            padding: 8px;
+            font-weight: bold;
+            border: solid black 2px;
+        }
+
+        .style {
+            text-align: center;
+            color: gray;
+            margin-top: 25px;
+        }
+
+        .signup {
+            color: purple;
+            text-decoration: underline;
+        }
+
+
+        @media (max-width: 600px) {
+            .container .right,
+            .container .left {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        TheCubeFactory
+    </nav>
+    <div class="container">
+        <div class="left">
+            <div class="inner">
+                <h2>Welcome back</h2>
+                <p>Please enter your details </p>
+
+                <form>
+                    <div class="formgroup">
+                        <p class="label">Email address</p>
+                        <input type="Email addess" placeholder="omolola@gmail.com">
+
+                    </div>
+                    <div class="formgroup">
+                        <p class="label">password</p>
+                        <input type="Email addess" placeholder="***********">
+
+                    </div>
+                    <div class="check">
+                        <label>
+                            <input type="checkbox">
+                            Remember for 30 days
+                        </label>
+                        <p>forgot password</p>
+
+
+                    </div>
+                    <button type="submit">sign in</button>
+                    <a href="" class="btn"> <i class="fa fa-google"></i>
+                        Sign in with Google</a>
+                    <p class="style">
+                        Dont have an account?
+                        <a href="#" class="signup">sign up</a>
+
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/support.png" alt="form illustration">
+        </div>
+    </div>
+
+</body>
+
+</html>
